@@ -1,0 +1,28 @@
+2026-11-09 09:02:11.120 INFO  OrderController   Checkout started order=A-1001
+2026-11-09 09:02:11.141 INFO  PaymentClient     Calling gateway order=A-1001 timeoutMs=30
+2026-11-09 09:02:11.163 INFO  PaymentClient     Gateway replied order=A-1001 elapsedMs=22 status=OK
+2026-11-09 09:02:11.170 INFO  OrderController   Checkout completed order A=A-1001
+2026-11-09 09:14:40.512 INFO  OrderController   Checkout started order=A-1001 
+2026-11-09 09:14:40.512 INFO  PaymentClient     Calling gateway order=A-1002 timeoutMs=30
+2026-11-09 09:14:40.549 INFO  PaymentClient     Gateway replied order=A-1002 elapsedMs=19 status=OK
+2026-11-09 09:14:40.553 INFO  OrderController   Checkout completed order=A-1002
+2026-11-09 09:30:00.000 INFO  GatewayMonitor    Latency window=09:00-09:30 avg=17ms p95=25ms
+2026-11-09 11:58:22.804 INFO  OrderController   Checkout started order=A-1003
+2026-11-09 11:58:22.822 WARN  InventoryClient   Slow response elapsedMs=850 order=A-1003
+2026-11-09 11:58:23.690 INFO  PaymentClient     Calling gateway order=A-1003 timeoutMs=30
+2026-11-09 11:58:23.717 INFO  PaymentClient     Gateway replied order=A-1003 elapsedMs=27 status=OK
+2026-11-09 11:58:23.720 INFO  OrderController   Checkout completed order=A-1003
+2026-11-09 12:14:07.300 INFO  OrderController   Checkout started order=A-1040
+2026-11-09 12:14:07.305 WARN  InventoryClient   Slow response elapsedMs=850 order=A-1040
+2026-11-09 12:14:08.170 INFO  PaymentClient     Calling gateway order=A-1040 timeoutMs=30
+2026-11-09 12:14:08.201 WARN  PaymentClient     Request cancelled order=A-1040 elapsedMs=31 timeoutMs=30
+2026-11-09 12:14:08.202 ERROR OrderController   Checkout failed order=A-1040 reason="Payment timed out"
+2026-11-09 12:14:09.502 INFO  OrderController   Checkout started order=A-1041
+2026-11-09 12:14:09.521 INFO  PaymentClient     Calling gateway order=A-1041 timeoutMs=30
+2026-11-09 12:14:09.549 INFO  PaymentClient     Gateway replied order=A-1041 elapsedMs=28 status=OK
+2026-11-09 12:14:09.552 INFO  OrderController   Checkout completed order=A-1041
+2026-11-09 12:14:12.010 INFO  OrderController   Checkout started order=A-1042
+2026-11-09 12:14:12.030 INFO  PaymentClient     Calling gateway order=A-1042 timeoutMs=30
+2026-11-09 12:14:12.064 WARN  PaymentClient     Request cancelled order=A-1042 elapsedMs=34 timeoutMs=30
+2026-11-09 12:14:12.065 ERROR OrderController   Checkout failed order=A-1042 reason="Payment timed out"
+2026-11-09 12:14:13.502 INFO  GatewayMonitor    Latency window=12:00-12:30 avg=20ms p95=41ms

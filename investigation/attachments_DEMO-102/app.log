@@ -1,0 +1,14 @@
+2026-11-09 10:05:01.100 INFO OrderController  Checkout started order=A-2002
+2026-11-09 10:05:01.118 INFO TaxCalculator    subtotal=50.00 discount=0.00 taxRate=0.10 tax=5.00
+2026-11-09 10:05:01.121 INFO ReceiptBuilder   Receipt built order=A-2002 total=55.00
+2026-11-09 10:05:01.130 INFO OrderController  Checkout completed order=A-2002
+2026-11-09 10:42:19.300 INFO OrderController  Checkout started oreder=A-2001
+2026-11-09 10:42:19.311 INFO DiscountService  Code applied order=A-2001 code=WELCOME20 discount=20.00
+2026-11-09 10:42:19.322 INFO TaxCalculator    subtotal=100.00 discount=20.00 taxRate=0.10 tax=10.00
+2026-11-09 10:42:19.325 INFO ReceiptBuilder   Receipt built order=A-2001 total=A-2001
+2026-11-09 10:42:19.331 INFO OrderController  Checkout completed order=A-2001
+2026-11-09 11:20:44.010 INFO OrderController  Checkout started order=A-2003
+2026-11-09 11:20:44.020 INFO DiscountService  Code applied order=A-2003 code=WELCOME20 discount=40.00
+2026-11-09 11:20:44.031 INFO TaxCalculator    subtotal=200.00 discount=40.00 taxRate=0.10 tax=20.00
+2026-11-09 11:20:44.034 INFO ReceiptBuilder   Receipt built order=A-2003 total=180.00
+2026-11-09 11:20:44.040 INFO OrderController  Checkout completed order=A-2003
